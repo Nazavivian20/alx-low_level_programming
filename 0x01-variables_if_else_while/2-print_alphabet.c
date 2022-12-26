@@ -1,20 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <unistd.h>
 
 /**
- * main - returns alphabets
- *
+ * main - Entry point
+ * Description: prints alphabet in lowercase then uppercase
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int ch = 'a';
+	int ch;
 
-       while (ch <= '2')  
-	 {
-	       putchar(ch);
-               ch++;  
-	 }
-         putchar('\n');
-	 return (0);
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+	for (ch = 'A'; ch <= 'Z'; ch++)
+	{
+		putchar(ch);
+	}
+
+	putchar('\n');
+	return (0);
 }
+
