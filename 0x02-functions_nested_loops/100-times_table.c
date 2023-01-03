@@ -14,7 +14,7 @@ void print_times_table(int n)
 	{
 		for (x = 0; x <= n; x++)
 		{
-			z = x * y;
+			z = y * x;
 			if (z > 99)
 			{
 				_putchar(',');
@@ -45,3 +45,4 @@ void print_times_table(int n)
 		}
 		_putchar('\n');
 	}
+}
